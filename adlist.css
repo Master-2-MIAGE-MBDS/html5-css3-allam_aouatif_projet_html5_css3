@@ -1,9 +1,6 @@
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-    body { background: white;
-    height: 1024px;
-    margin: 0px;
+body { background: white;
+    margin: 0%;
     }
-}
     
 .header { 
     grid-area: header;
@@ -19,15 +16,22 @@
     align-content: center ;
     font-size: x-large;
     color:white;
+    
  }
 .input { grid-area: input;
-    
+    background-color:white;
+    text-align: center;
+    margin-right: 0%;
+    margin-left: 0%;
 }
 
 .bouton { 
     grid-area: bouton;
     
-    margin-bottom:5px;
+    background-color:white;
+    text-align: center;
+    margin-right: 0%;
+    margin-left: 0%;
     
  }
 .footer { 
@@ -46,7 +50,7 @@
 .container {
 display: grid;
 grid-template-columns: auto;
-grid-template-rows: 50px 50px 200px 50px 25%;
+grid-template-rows: 50px 50px 200px 200px 25%;
 grid-template-areas:
 "header header"
 "welcome welcome"

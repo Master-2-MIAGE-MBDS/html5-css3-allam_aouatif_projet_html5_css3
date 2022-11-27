@@ -1,33 +1,41 @@
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
     body { background: white;
-    height: 1024px;
-    margin: 0px;
+    margin: 0%;
     }
-}
-    
+
 .header { 
     grid-area: header;
     background-color: dodgerblue;
     font-size: xx-large;
     color:white;
-
  }
 .welcome { 
     grid-area: welcome;
     background-color:lightsteelblue;
     text-align: center;
+    margin-right: 0%;
+    margin-left: 0%;
 
  }
-.input { grid-area: input;
-    
+.input { 
+    grid-area: input;
+    width: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
-.bouton { 
+.btn { 
     grid-area: bouton;
-    
-    margin-bottom:5px;
+    font-size: large;
+    margin-bottom:0px;
+    color: white;
+    background-color: dodgerblue;
+    width: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
+
     
  }
+ 
 .footer { 
     grid-area: footer;
     background-color: dodgerblue;
@@ -39,18 +47,25 @@
     height: 50px;
     padding-top: 5px;
     margin-top: 0px;
+    
  }
 
 .container {
-display: grid;
-grid-template-columns: auto;
-grid-template-rows: 50px 300px 200px 50px 25%;
-grid-template-areas:
-"header"
-"welcome"
-"input"
-"bouton"
-"footer";
-height: 100%;
-width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 350px 200px 200px 25%;
+    grid-template-areas:
+    "header header"
+    "welcome welcome"
+    "input input"
+    "bouton bouton"
+    "footer footer";
+    height: 100%;
+    width: 100%;
+}
+.img{
+    grid-area: welcome;
+    margin-top: 50px;
+    width: 170px;
+    border-radius: 100%;
 }
